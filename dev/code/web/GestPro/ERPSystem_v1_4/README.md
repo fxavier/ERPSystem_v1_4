@@ -15,6 +15,9 @@ Scripts adicionais:
 ## Documentação detalhada
 Toda a documentação funcional reorganizada, incluindo diagramas e descrição dos módulos sem duplicações, está disponível em [`docs/DOCUMENTACAO.md`](docs/DOCUMENTACAO.md).
 
+- Documentação funcional (frontend): [`docs/DOCUMENTACAO.md`](docs/DOCUMENTACAO.md)
+- Documentação técnica do backend Spring Modulith: [`docs/BACKEND_MODULITH.md`](docs/BACKEND_MODULITH.md)
+
 ## Stack
 - Next.js 15 (App Router) + React 19 + TypeScript 5.
 - Tailwind CSS 4, Radix UI, `lucide-react`.
