@@ -1,37 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# GestPro ERP
 
-## Getting Started
+Documentação e interface do ERP modular desenvolvido em Next.js 15. Esta versão descreve o sistema em Português de Portugal e foca-se na organização clara dos módulos de negócio.
 
-First, run the development server:
-
+## Como executar
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+Scripts adicionais:
+- `npm run lint` &rarr; validação ESLint 9/Next.js.
+- `npm run build` &rarr; build de produção App Router.
+- `npm run start` &rarr; executa artefacto compilado (porta 3000).
+
+## Documentação detalhada
+Toda a documentação funcional reorganizada, incluindo diagramas e descrição dos módulos sem duplicações, está disponível em [`docs/DOCUMENTACAO.md`](docs/DOCUMENTACAO.md).
+
+## Stack
+- Next.js 15 (App Router) + React 19 + TypeScript 5.
+- Tailwind CSS 4, Radix UI, `lucide-react`.
+- `react-hook-form`, `zod`, `recharts`, `@supabase/postgrest-js`.
+
+## Estrutura resumida
+```
+src/
+├─ app/(dashboard)   # módulos funcionais (compras, vendas, rh, etc.)
+├─ components        # biblioteca de UI e layouts
+├─ lib               # conectores, utilidades e validações legais
+├─ services          # motores de domínio (stock, comissões)
+└─ types             # tipagens globais
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# ERPSystem_v1_4
+Para detalhes adicionais (fluxos, backlog e integrações) consulte o documento principal em `docs/`.
